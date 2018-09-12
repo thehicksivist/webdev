@@ -1,0 +1,66 @@
+{
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 100vh; /* Should be removed. Only for demonstration */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2 {
+    color: red;
+}
+
+.cam {
+    max-height: 50vh;
+
+    /* padding-right: 10vw;
+    padding-left: 10vw;     */
+    display: block;
+    vertical-align: middle;
+    margin: 0 auto; 
+    padding-top: 4px;  
+    
+}
+em {
+color: red;
+font-style: bold;
+}
+
+strong {
+font-style: bold;
+}
+.nav {
+    background-color: red;
+    align-content: center;
+    text-align: center;
+ }
+ 
+ .nav ul {
+    display: inline;
+    list-style: none;
+    margin: 0 2px;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+ }
+ .white {
+     color:white;
+ }
+ .red {
+     color: red;
+ }
