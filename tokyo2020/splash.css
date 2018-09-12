@@ -1,22 +1,35 @@
-{
-    box-sizing: border-box;
-}
 
+body {
+    font-family: Georgia, Times, serif;
+}
 /* Create two equal columns that floats next to each other */
-.column {
+.column1 {
     float: left;
-    width: 50%;
+    width: 30%;
     padding: 10px;
     height: 100vh; /* Should be removed. Only for demonstration */
     display: table-cell;
     vertical-align: middle;
 }
 
+.column2 {
+    float: left;
+    width: 60%;
+    padding: 10px;
+    height: 100vh; /* Should be removed. Only for demonstration */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+h1 {
+    margin: 10%;
 }
 
 h2 {
@@ -31,19 +44,22 @@ h2 {
     display: block;
     vertical-align: middle;
     margin: 0 auto; 
+    margin-top: 10%;
     padding-top: 4px;  
     
 }
 em {
 color: red;
 font-style: bold;
+font-size: 2.3rem;
+padding: 2px;
 }
 
 strong {
 font-style: bold;
 }
 .nav {
-    background-color: red;
+    background-color: white;
     align-content: center;
     text-align: center;
  }
@@ -61,6 +77,11 @@ font-style: bold;
  .white {
      color:white;
  }
+
  .red {
      color: red;
  }
+.reverse {
+    /* unicode-bidi:bidi-override;
+    direction:rtl; */
+}
