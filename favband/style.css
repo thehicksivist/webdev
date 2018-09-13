@@ -1,43 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Noto+Serif|Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
     background-color: #A4A7A8;
     max-width: 1500px;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;    
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
     /* the above or shorthand below */
-    font: Arial, Helvetica, sans-serif, 18px, bold;
-    background-color: black;
-    color: white;
+    font: 18px, bold;
+    background-color: 545B62;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 hr {
     color: black;
 }
 
-.title-sub {
-    align-content: center;
-}
-
 .title {
     font-size: 1.75rem;
+}
+
+.title-sub {
     text-align: center;
+    font-size: 0.75rem;
+    padding: 0;
 }
 
 header {
     align-content: center;
 }
 
+.bancon {
+    padding-top: 20px;
+    display: grid;
+    height: 100%;
+}
+
 .banner {
-    max-width: 1000px;
-    left: 50%;
-    margin-left: 250px
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
 }
 
 header {
     background-color: #A4A7A8;
+    margin: auto;
 }
 
 img {
@@ -46,8 +60,7 @@ img {
 }
 
 p {
-    font-family: Helvetica, sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: normal;
 }
 
@@ -67,11 +80,12 @@ p em {
     font-size: 0.85rem;
 }
 
-
 .nav {
     background-color: #545B62;
     align-content: center;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .nav ul {
@@ -83,10 +97,6 @@ p em {
     padding-bottom: 5px;
     display: flex;
     justify-content: space-around;
-}
-
-a:visited {
-    color: black;
 }
 
 .albums {
@@ -112,6 +122,82 @@ padding: 0;
 }
 
 footer {
-    position: absolute;
+    position: fixed;
+    height: 18px;
+    background-color: #545B62;
     bottom: 0%;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+.frontleft {
+    margin-top: 10px;
+    float: left;
+    width: 20%;
+}
+
+.frontright {
+    float: left;
+    width: 60%;
+}
+
+/* Clear floats after the columns */
+.front:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(211, 211, 211);
+}
+
+a:active {
+    color: rgb(211, 211, 211);
+}
+
+a:hover {
+    color: black;
+}
+
+.wrapper {
+    width: 600px;
+    margin: auto;
+}
+
+.members {
+    list-style: none;
+    width: 100%;
+}
+
+.members li {
+    display: inline-block;
+    width: 49%;
+}
+
+.members li span {
+    position: relative;
+    top: 170px;
+    left: 10px;
+    z-index: 1;
+    background-color: black;
+    color: rgb(211, 211, 211);
+}
+
+.quote {
+    font-family: 'Cinzel';
+    font-size: 1.25rem;
+    font-style: bold;
+}
+
+.quote em {
+    font-family: 'Cinzel';
+    font-size: 1.25rem;
 }
