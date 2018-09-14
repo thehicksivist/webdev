@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.top{
+width: 100%;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    justify-content: center;
+    flex-flow: row;
+}
+
+.logo {
+font-size: 2.5rem;
+}
+
+.middle {
+    
+}
+
+.jingle {
+
+}
+
+.explore {
+
+}
+
+.bottom {
+
+}
+
+.ad {
+
+}
