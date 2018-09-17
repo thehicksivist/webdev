@@ -5,22 +5,35 @@ body {
 }
 
 .top{
-width: 100%;
+width: 100vw;
 }
 
 .nav {
-    width: 100%;
+    width: 100vw;
 }
 
 .nav ul {
     display: flex;
     list-style: none;
+    align-items: baseline;
+    justify-content: space-around;
 }
 
 .nav ul li {
-    justify-content: center;
-    flex-flow: row;
+
 }
+.nav ul :nth-child(1) {
+    padding: 10px;
+}
+
+.nav ul :nth-child(6) {
+padding: 5px;
+}
+
+.nav ul :nth-child(7) {
+    padding: 5px;
+}
+
 
 .logo {
 font-size: 2.5rem;

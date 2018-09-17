@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* base styles - must be placed after wildcard but before media queries */
+/* @import 'mobile.css' for multiple files */
+main {}
+
+/* apply this following to all included (as opposed to nav (space) header, 
+which would target a header nested in a header. convention is have the different elements listed on different lines as below */
+nav,
+header,
+section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+nav {
+    height: 80px;
+    background-color: darkgoldenrod;
+}
+
+header {
+    background-color: gray;
+}
+
+#content {
+    background-color: aquamarine;
+}
+
+#sign-up {
+    background-color: coral;
+}
+
+#feature-1 {
+    background-color: darkgreen;
+
+}
+
+#feature-2 {
+    background-color: rgb(54, 138, 54);
+}
+
+#feature-3 {
+    background-color: rgb(15, 59, 15);
+}
+
+/* Mobile styles */
+/* media query - if the site is being viewed on a screen under 400 px, apply the following */
+@media screen and (max-width: 400px) {
+    body {
+        background-color: violet;
+    }
+}
+
+/* tablet styles */
+/* ipad width is 768 */
+@media screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        background-color: olive;
+    }
+}
+
+/* desktop styles */
+@media screen and (min-width: 961px) {
+    body {
+        background-color: green;
+    }
+}
