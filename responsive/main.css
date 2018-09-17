@@ -7,7 +7,10 @@
 
 /* base styles - must be placed after wildcard but before media queries */
 /* @import 'mobile.css' for multiple files */
-main {}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* apply this following to all included (as opposed to nav (space) header, 
 which would target a header nested in a header. convention is have the different elements listed on different lines as below */
@@ -66,11 +69,44 @@ header {
     body {
         background-color: olive;
     }
+
+    #sign-up,
+    #feature-1,
+    #feature-2,
+    #feature-3 {
+        width: 50%;
+    }
 }
 
 /* desktop styles */
 @media screen and (min-width: 961px) {
     body {
         background-color: green;
+    }
+
+    /* the setting below limits the width of the main content, locks it to the center so it is more readable */
+    main {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    /* organises the feature boxes to align in a row */
+    #feature-1,
+    #feature-2,
+    #feature-3 {
+        width: 33.3%;
+    }
+
+    header {
+        height: 400px;
+    }
+
+    #sign-up {
+        order: 1;
+        height: 100px;
+    }
+
+    #content {
+        order: 2;
     }
 }
