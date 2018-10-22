@@ -22,6 +22,20 @@ body {
   }
 }
 
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 #content article {
   height: 100%;
   position: relative;
@@ -31,6 +45,16 @@ body {
 
 #content article img {
   height: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: 10px 10px 20px #00000080;
+          box-shadow: 10px 10px 20px #00000080;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#content article img:hover {
+  -webkit-animation: spin 5s infinite;
+          animation: spin 5s infinite;
 }
 
 @media screen and (min-width: 401px) and (max-width: 960px) {
@@ -62,6 +86,7 @@ section {
   height: 300px;
   width: 100%;
   font-size: 2rem;
+  text-shadow: 2px 2px 6px #00000080;
 }
 
 footer {
@@ -76,7 +101,35 @@ footer {
           align-items: center;
   height: 200px;
   width: 100%;
-  background: olive;
+  background: radial-gradient(olive, white);
+}
+
+@-webkit-keyframes foo {
+  0% {
+    background-color: black;
+    height: 50px;
+  }
+  50% {
+    height: 200px;
+  }
+  100% {
+    background-color: white;
+    height: 50px;
+  }
+}
+
+@keyframes foo {
+  0% {
+    background-color: black;
+    height: 50px;
+  }
+  50% {
+    height: 200px;
+  }
+  100% {
+    background-color: white;
+    height: 50px;
+  }
 }
 
 nav {
@@ -92,6 +145,5 @@ nav {
   height: 80x;
   width: 100%;
   font-size: 2rem;
-  background-color: darkgoldenrod;
 }
 /*# sourceMappingURL=style.css.map */

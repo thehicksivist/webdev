@@ -27,6 +27,12 @@ body {
     }
 }
 
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 #content {
 
     article {
@@ -37,6 +43,19 @@ body {
 
         img {
             height: 100%;
+            border-radius: 50%;
+            box-shadow: 10px 10px 20px #00000080;
+            transition: all 2s;
+            // transform-origin: 0% 0%;
+
+            &:hover {
+                animation: spin 5s infinite;
+                // transform: rotate(90deg);
+                // opacity: 0;
+                // margin-left: 100px;
+                // transform: scale(-1, 1.5) rotate(360deg);
+            }
+
 
             @include tablet {
                 height: 50%
@@ -70,17 +89,36 @@ header,
 section {
     @include center(300px);
     font-size: 2rem;
+    text-shadow: 2px 2px 6px #00000080;
 }
 
 footer {
     @include center(200px);
-    background: olive;
+    background: radial-gradient(olive, white);
+
+}
+
+@keyframes foo {
+    0% {
+        background-color: black;
+        height: 50px;
+    }
+
+    50% {
+        height: 200px;
+    }
+
+    100% {
+        background-color: white;
+        height: 50px;
+    }
 }
 
 nav {
     @include center(80x);
     font-size: 2rem;
-    background-color: darkgoldenrod;
+    // background-color: darkgoldenrod;
+    // animation: foo 3s 2 forwards;
 }
 
 // #content article,
